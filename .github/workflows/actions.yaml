@@ -1,4 +1,4 @@
-name: Push-Wordpress-website-to AWS EC2  server through github actions 
+name: Push-Wordpress-website-to AWS EC2 server through github actions 
 
 # Trigger deployment only on push to main branch
 on:
@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
       
     steps:
-      
+  
       - name : ssh to Server
         run: |
         sudo chown -R www-data:www-data /var/www/html/wordpress/
