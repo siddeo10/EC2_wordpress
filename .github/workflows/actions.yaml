@@ -1,4 +1,4 @@
-name: Push-Wordpress-website-to EC2 server through github actions 
+name: Push-Wordpress-website-to AWS EC2  server through github actions 
 
 # Trigger deployment only on push to main branch
 on:
