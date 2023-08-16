@@ -10,8 +10,14 @@ jobs:
   deploy:
     name: Deploy to EC2 on master branch push
     runs-on: ubuntu-latest
-
+      
     steps:
+      
+      - name : ssh to Server
+        run: |
+        sudo chown -R www-data:www-data /var/www/html/wordpress/
+        sudo chmod -R 755 /var/www/html/wordpress/
+
       - name: Checkout the files
         uses: actions/checkout@v2
 
